@@ -13,8 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aduanas - NewCooltura Informada",
-  description: "Buscador de aduanas y pasos fronterizos, calculadora de aranceles de importación, franquicias y trámites aduaneros en Chile",
+  title: "Aduanas Chile - NewCooltura Informada",
+  description: "Buscador de aduanas y pasos fronterizos, calculadora de aranceles de importacion, franquicias y tramites aduaneros en Chile",
+  keywords: ["aduanas chile", "pasos fronterizos", "aranceles importacion", "franquicias aduaneras", "tramites aduaneros", "calculadora impuestos"],
+  openGraph: {
+    title: "Aduanas Chile - NewCooltura Informada",
+    description: "Buscador de aduanas, calculadora de aranceles y tramites aduaneros",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
